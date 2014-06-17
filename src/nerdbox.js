@@ -106,7 +106,7 @@ Nerdbox.prototype._open = function(href) {
 
 Nerdbox.prototype._setup = function() {
   // Add HTML to DOM
-  jQuery('body').append(Nerdbox.options.container);
+  jQuery('body').append(this.options.container);
 
   // Bind click handlers
   var boundOpen = jQuery.proxy(this._openFromLink, this);
